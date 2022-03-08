@@ -1,0 +1,27 @@
+$main_font_color: #eff3f5;
+$sub_color: #b0b3b5;
+
+.app-nav {
+  flex: 1 0 50%;
+  &-list {
+    margin: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      padding: 0 12px;
+    }
+  }
+  &-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $sub_color;
+    font-weight: 600;
+    &.active,
+    &:hover {
+      color: $main_font_color;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    display: none;
+  }
+}

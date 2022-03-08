@@ -1,0 +1,3 @@
+export const ADD_FETCHED_DATA = "ADD_FETCHED_DATA";
+export const FETCH_LOADING = "FETCH_LOADING";
+export const QUERY_RESULT = "QUERY_RESULT";

@@ -1,0 +1,126 @@
+.project-list-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.project-list {
+  &__header {
+    margin: 0 17px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgba(#8d8d8e, 0.35);
+    margin-bottom: 20px;
+    &--result {
+      font-size: 12px;
+      font-weight: 700;
+      font-family: "Roboto", sans-serif;
+      color: #b0b3b5;
+    }
+  }
+}
+
+.project-item {
+  flex: 100% 0 1;
+  margin: 17px 0;
+  padding: 0 17px;
+  @media only screen and (min-width: 768px) {
+    flex: 50% 0 1;
+  }
+  @media only screen and (min-width: 1201px) {
+    flex: 33.3333% 0 1;
+  }
+  &__inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 16px 24px 22px;
+    background-color: #363a42;
+    filter: drop-shadow(3px 3px 2px rgba(20, 21, 23, 0.35));
+    &:before {
+      content: "";
+      position: absolute;
+      width: calc(100% - 4px);
+      height: 4px;
+      border-radius: 3px 3px 0 0;
+      background-color: #b0b3b5;
+      left: 2px;
+      top: -4px;
+    }
+  }
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    &--logo {
+      padding-right: 15px;
+    }
+    &--name {
+      margin-top: 0;
+      margin-bottom: 7px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+    }
+    &--location {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__title a {
+    color: #eff3f5;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in;
+    &:hover {
+      color: #b0b3b5;
+    }
+    @media only screen and (min-width: 641px) {
+      font-size: 20px;
+    }
+  }
+  &__tags {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding-bottom: 16px;
+    padding-left: 0;
+    border-bottom: 1px solid #242629;
+    gap: 12px;
+    &--item {
+      span {
+        display: inline-block;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        color: #eff3f5;
+        background-color: #5078bf;
+        border: 1px solid #eff3f5;
+        border-radius: 3px;
+        padding: 7px 7px 5px;
+        text-decoration: none;
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    &--videos,
+    &--date {
+      display: flex;
+      align-items: center;
+      span {
+        padding-left: 9px;
+      }
+    }
+  }
+}
+
+.project-loading {
+  text-align: center;
+  font-size: 40px;
+}

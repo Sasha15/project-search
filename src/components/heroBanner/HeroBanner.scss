@@ -1,0 +1,38 @@
+.app-hero {
+  position: relative;
+  img {
+    width: 100%;
+    min-height: 250px;
+    object-position: center center;
+    object-fit: none;
+    @media only screen and (min-width: 371px) {
+      min-height: 275px;
+    }
+    @media only screen and (min-width: 1500px) {
+      object-fit: fill;
+    }
+  }
+}
+.app-caption {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 17px;
+  h1 {
+    font-size: 32px;
+    margin: 0 0 18px;
+    @media only screen and (min-width: 641px) {
+      font-size: 40px;
+    }
+  }
+  p {
+    font-size: 18px;
+    margin: 0;
+    @media only screen and (min-width: 641px) {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+$main_background: #2e2e38;
+$main_font_color: #eff3f5;
+$container_width: 1346px;
+
+.container {
+  max-width: $container_width;
+  margin: 0 auto;
+}
+
+.app {
+  position: relative;
+  background-color: $main_background;
+  color: $main_font_color;
+  min-height: 100vh;
+  padding-bottom: 68px;
+  &-header {
+    padding: 25px 17px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
